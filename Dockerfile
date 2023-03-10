@@ -4,4 +4,5 @@ ARG BASE_IMAGE
 
 FROM ${BASE_IMAGE}
 
+RUN echo ${REPO_BRANCH}
 RUN git clone -b ${REPO_BRANCH} ${REPO_URL}
